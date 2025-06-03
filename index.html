@@ -138,30 +138,64 @@
     </header>
 
     <main class="main">
-      <!-- Hero Section -->
-      <section id="hero" class="hero section dark-background">
-        <img src="assets/DSC_1266.JPG" alt="" data-aos="fade-in" />
 
-        <div class="container d-flex flex-column align-items-center">
-          <h1 style="font-weight: bold" data-aos="fade-up" data-aos-delay="100">
-            HOGAR GERIATRICO JOVENES DEL AYER
-          </h1>
-          <h2 style="font-size: 20px" data-aos="fade-up" data-aos-delay="200">
-            Cuidamos con amor a quienes lo dieron todo
-          </h2>
-          <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="https://wa.me/573165783244" class="btn-get-started d-flex align-items-center">
-              <i class="bi bi-whatsapp me-2"></i>Contáctanos!
-            </a>
-            <!-- <a
-              href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-              class="glightbox btn-watch-video d-flex align-items-center"
-              ><i class="bi bi-play-circle"></i><span>Watch Video</span></a
-            > -->
-          </div>
-        </div>
-      </section>
-      <!-- /Hero Section -->
+<!-- Hero Section - Optimizado para SEO y Conversión -->
+<section id="hero" class="hero section dark-background" itemscope itemtype="https://schema.org/NursingHome">
+  <!-- Imagen optimizada (WebP + lazy loading + alt descriptivo) -->
+  <img 
+    src="assets/DSC_1266.webp" 
+    alt="Residencia para adultos mayores en Belén La Palma, Medellín - Ambiente cálido y seguro" 
+    loading="lazy"
+    data-aos="fade-in"
+    itemprop="image"
+  />
+
+  <div class="container d-flex flex-column align-items-center">
+    <!-- H1 con keywords y ubicación -->
+    <h1 
+      style="font-weight: bold" 
+      data-aos="fade-up" 
+      data-aos-delay="100"
+      itemprop="name"
+    >
+      Hogar Geriátrico Jóvenes del Ayer - Belén La Palma (Medellín)
+    </h1>
+
+    <!-- H2 con beneficio emocional -->
+    <h2 
+      style="font-size: 20px" 
+      data-aos="fade-up" 
+      data-aos-delay="200"
+      itemprop="description"
+    >
+      Cuidado especializado para adultos mayores con amor y profesionalismo
+    </h2>
+
+    <div class="d-flex mt-4 gap-3" data-aos="fade-up" data-aos-delay="300">
+      <!-- Botón principal (WhatsApp) -->
+      <a 
+        href="https://wa.me/573165783244" 
+        class="btn-get-started d-flex align-items-center"
+        aria-label="Contactar por WhatsApp"
+      >
+        <i class="bi bi-whatsapp me-2"></i>¡WhatsApp Ahora!
+      </a>
+
+      <!-- Botón secundario (Tour Virtual o Llamada) -->
+      <a 
+        href="tel:+573165783244" 
+        class="btn-llamar d-flex align-items-center"
+        aria-label="Llamar por teléfono"
+      >
+        <i class="bi bi-telephone me-2"></i>Llamar
+      </a>
+    </div>
+
+    <!-- Microdatos ocultos para SEO -->
+    <meta itemprop="address" content="Belén La Palma, Medellín">
+    <meta itemprop="telephone" content="+573165783244">
+  </div>
+</section>
 
       <section id="about" class="about section bg-light" >
         <!-- Section Title -->

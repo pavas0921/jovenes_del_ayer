@@ -1846,3 +1846,52 @@ section,
 }
 
 
+
+/* ======================
+   ESTILOS PARA BOTÓN "LLAMAR" 
+   ====================== */
+
+/* Estilo BASE del botón (mobile-first) */
+.btn-llamar {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%); /* Gradiente gris */
+  color: white !important; /* Fuerza color blanco aunque haya otros estilos */
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Transición suave para hover */
+  border: 2px solid #495057; /* Borde del mismo color que el gradiente */
+  font-family: 'Raleway', sans-serif; /* Usa la misma fuente que tu sitio */
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+   padding: 10px 30px;
+}
+
+/* Efecto HOVER (interacción) */
+.btn-llamar:hover {
+  background: linear-gradient(135deg, #495057 0%, #343a40 100%);
+  border-color: #343a40;
+  transform: translateY(-2px); /* Efecto "levitar" */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+/* Estilo del ícono telefónico */
+.btn-llamar .bi-telephone {
+  font-size: 1.2rem; /* Tamaño ligeramente mayor */
+  margin-right: 8px; /* Espaciado entre ícono y texto */
+}
+
+/* ======================
+   VERSIÓN RESPONSIVE 
+   ====================== */
+@media (max-width: 768px) {
+  .btn-llamar {
+    padding: 8px 16px; /* Más compacto en móviles */
+    font-size: 0.9rem;
+  }
+}
